@@ -19,12 +19,13 @@
 	<p><u class="important">this is underline paragraph.</u></p>
 </head>
 <body>
-	<nav>
-		<a href="/html/">text1</a> |
-		<a href="/css/">text2</a> |
-		<a href="/js/">text3</a> |
-		<a href="text4.html">text4</a>
-	</nav>
+	<div id="nav"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$("#nav").load( "nav.html");
+	</script>
+
+
 	
 	<font size="5">HELLO,HTML5!</font>
 	<table style="border:3px #BE77FF dashed;" cellpadding="10" border='1'>
