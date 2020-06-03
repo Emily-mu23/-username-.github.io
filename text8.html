@@ -14,9 +14,40 @@
 	<form method="get" action="">
 	<input type="text" name="id" />
 	<br>
-	<input type="password" name="pw" />
+	<input type="password" name="pw"pattern="[a-zA-Z0-9]{8}" />
 	<br>
-	<input type="submit" value="送出表單" />
+
+	<label for="phone">Enter a phone number:</label><br><br>
+  	<input type="tel" id="phone" name="phone" placeholder="1234-496678"
+  	pattern="[0-9]{4}-[0-9]{6}"><br><br>
+  	<small>Format: 123-45-678</small><br><br>
+	
 	</form>
+
+	<textarea style="width: 300px; height:100px;">請輸入你想要寫的內容...	</textarea>
+	
+	
+	<br><br>就讀科系<select name="就讀科系">
+　	<option value="Taipei">護理系</option>
+　	<option value="Taoyuan">醫放系</option>
+　	<option value="Hsinchu">科管系</option>
+　	<option value="Miaoli">行管系</option>
+　	<option value="Miaoli">醫管系</option>
+	</select>
+	
+	<br><br>請選擇居住區域<br>
+	<input type="radio" name="location" value="Taipei"> 台北<br>
+	<input type="radio" name="location" value="Taoyuan"> 桃園<br>
+	<input type="radio" name="location" value="Hsinchu"> 新竹<br>
+	<input type="radio" name="location" value="Taichung" checked=""> 台中<br>
+	
+	<br><br>請勾選你的興趣<br>
+	<input type="checkbox" value="Travel" name="Interest"> 旅遊<br>
+	<input type="checkbox" value="Movie" name="Interest"> 電影<br>
+	<input type="checkbox" value="Food" name="Interest"> 美食<br>
+	<input type="checkbox" value="Food" name="Interest"> 喝飲料<br>
+	<input type="checkbox" value="Food" name="Interest" checked=""> 玩遊戲<br>
+	
+	<br><br><input type="submit" value="送出表單" />
 </body>
 </html>
